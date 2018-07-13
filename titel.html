@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Het WK </title>
+		<meta name="author" content="Jasper, Noah, Cesar, Pieke, Louis" >
+		<meta name="description" content="Geschiedenis van de computer" >
+		<meta name="keywords" content="geschiedenis van de computer, mla, PO Informatica" >
+		<link rel="stylesheet" href="css.css"    />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML =
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+		</script>
+	</head>
+	<body onload="startTime()">
+
+	<div id="txt"></div>
+	<body>
+		<div id="container">
+			 <!-- <div id="topmenu">
+			     <span class="topmenuitem"><a href="/contact/">Contact</a></span>
+				 <span class="topmenuitem">|&nbsp;<a href="/blog/">Blog</a></span>
+				 <span class="topmenuitem">|&nbsp;<a href="/login/">Login</a></span>
+			</div> -->
+			<div id="header">
+				<a href="#"><center> Het WK </center></a>
+			</div>
+			<div id="menu">
+				<table>
+					<td class="menuitem"><a href="rekenmachines.html" > Het WK</a></td>
+					<td class="menuitem"><a href="computers.html" >Winnaars</a></td>
+					<td class="menuitem"><a href="mainframe.html" >Nederland op het WK </a></td>
+					<td class="menuitem"><a href="pc's.html" >Fifa</a></td>
+					<td class="menuitem"><a href="software.html" >WK 2018</a></td>
+				</table>
+			</div>
+			<div id="breadcrumbs">
+			</div>
+			<div id="content">
+				<center><img src="http://tbreinders.nl/wp-content/uploads/FIFA-Russia-2018-TBR-Energy-Solutions.jpg" width="1000" height="500"></center>
+				<center><h1><b>Deelonderwerpen</b></h1></center>
+				<center><table border="1" bgcolor="696969">
+					<tr>
+						<th>Het WK</th>
+						<th>Winnaars</th>
+						<th>Nederland op het WK</th>
+						<th>Fifa</th>
+						<th>WK 2018</th>
+					</tr>
+					<tr> 
+						<td>
+							<ul>
+								<li>Geschiedenis</li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li>Alle WK-winnaars ooit</li>						
+							</ul>
+						</td>						
+						<td>
+							<ul>
+								<li>WK 1974</li>
+								<li>WK 1978</li>
+								<li>WK 2010</li>							
+							</ul>
+						
+						</td>
+						<td>
+							<ul>
+								<li>Geschiedenis</li>
+								<li>Corruptie</li>
+								<li>Activiteiten</li>							
+							</ul>						
+						</td>
+						<td>
+							<ul>
+								<li>Poolfase</li>
+								<li>Bracket</li>							
+							</ul>
+						
+						</td>
+					</tr>
+				</table></center>
+			</div>		
+			<div id="footer">
+			<center> &copy; 2018. Jasper, Cesar. Alle rechten voorbehouden.  </center>
+			</div>		
+		</div>
+		</body>
+</html>
+
+
+
+
+
+
+
+
+

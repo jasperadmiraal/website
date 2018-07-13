@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>WK 2018</title>
+		<meta name="author" content="Jasper, Noah, Cesar, Pieke, Louis" >
+		<meta name="description" content="Geschiedenis van de computer" >
+		<meta name="keywords" content="geschiedenis van de computer, mla, PO Informatica" >
+		<link rel="stylesheet" href="css.css"    />
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML =
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+		</script>
+	</head>	
+	<body onload="startTime()">
+
+	<div id="txt"></div>
+	<body>
+		<div id="container">
+			 <!-- <div id="topmenu">
+			     <span class="topmenuitem"><a href="/contact/">Contact</a></span>
+				 <span class="topmenuitem">|&nbsp;<a href="/blog/">Blog</a></span>
+				 <span class="topmenuitem">|&nbsp;<a href="/login/">Login</a></span>
+			</div> -->
+			<div id="header">
+				<center><a href="titel.html">Het WK</a> </center>
+			</div>
+			<div id="menu">
+				<table>
+					<tr>
+						<td class="menuitem"><a href="rekenmachines.html"> Het WK</a></td>
+						<td class="menuitem"><a href="computers.html">Winnaars</a></td>
+						<td class="menuitem"><a href="mainframe.html">Nederland op het WK</a></td>
+						<td class="menuitem"><a href="pc's.html">Fifa</a></td>
+						<td class="menuitem active"><a href="software.html">WK 2018</a></td>
+					</tr>
+				</table>
+			</div>
+			<div id="breadcrumbs">
+				<a href="titel.html">Home </a> &raquo; WK 2018
+			</div>
+			<div id="content">
+				<h3> Bracket </h3>
+				<p>
+				<a href="https://sportnieuws.nl/voetbal/wk-2018/is-speelschema-knock-outfase-wk/"><img src="https://sportnieuws.nl/app/uploads/2018/06/BracketKwartfinale-1.jpg" alt="Bracket" /></a>
+				</p>
+				</br>
+				<h3> Poulfase </h3>
+				<p></p>
+				<img src="http://archief.sporza.be/polopoly_fs/1.3106796!image/1391152461.png_gen/derivatives/landscape470/1391152461.png" alt="Poulfase" />
+				<p></p>
+				<p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/GBYq1j3TohY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+				</p>
+			</div>		
+			<div id="footer">
+			<center> &copy; 2018. Jasper, Cesar. Alle rechten voorbehouden.  </center>
+			</div>		
+		</div>
+	</body>
+</html>
+
+
+

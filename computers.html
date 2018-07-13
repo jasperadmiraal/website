@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Winnaars</title>
+		<meta name="author" content="Jasper, Noah, Cesar, Pieke, Louis" >
+		<meta name="description" content="Geschiedenis van de computer" >
+		<meta name="keywords" content="geschiedenis van de computer, mla, PO Informatica" >
+		<link rel="stylesheet" href="css.css"    />
+		<script>
+		function startTime() {
+			var today = new Date();
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			m = checkTime(m);
+			s = checkTime(s);
+			document.getElementById('txt').innerHTML =
+			h + ":" + m + ":" + s;
+			var t = setTimeout(startTime, 500);
+		}
+		function checkTime(i) {
+			if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+			return i;
+		}
+		</script>
+	</head>	
+	<body onload="startTime()">
+
+	<div id="txt"></div>
+	<body>
+		<div id="container">
+			 <!-- <div id="topmenu">
+			     <span class="topmenuitem"><a href="/contact/">Contact</a></span>
+				 <span class="topmenuitem">|&nbsp;<a href="/blog/">Blog</a></span>
+				 <span class="topmenuitem">|&nbsp;<a href="/login/">Login</a></span>
+			</div> -->
+			
+			<div id="header">
+				<center><a href="titel.html"> Het WK</a> </center>
+			</div>
+			
+			<div id="menu">
+				<table>
+					<td class="menuitem"><a href="rekenmachines.html"> Het WK</a></td>
+					<td class="menuitem active"><a href="computers.html">winnaars</a></td>
+					<td class="menuitem"><a href="mainframe.html">Nederland op het WK</a></td>
+					<td class="menuitem"><a href="pc.html">Fifa</a></td>
+					<td class="menuitem"><a href="software.html">WK 2018</a></td>
+				</table>
+			</div>
+			
+			<div id="breadcrumbs">
+				
+				<a href="titel.html">Home</a> &raquo; Winnaars
+				
+			</div>
+			
+			<div id="content">
+				
+				<h1>Winnaars</h1>
+				<p>
+				<u>Alle winnaars ooit</u>
+				<br><p></p>
+				<img src="https://www.tussendelinies.nl/wp-content/uploads/2014/06/gastlanden-en-finalisten.png" alt="alle winnaars ooit"
+				
+			</div>	
+			
+			<div id="footer">
+				<center> &copy; 2018. Jasper, Cesar. Alle rechten voorbehouden.  </center>
+			</div>	
+			
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
